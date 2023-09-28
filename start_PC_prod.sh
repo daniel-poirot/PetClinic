@@ -5,11 +5,11 @@ export JAVA_HOME
 
 java \
     -javaagent:contrast-agent.jar \
-    -Dcontrast.agent.java.standalone_app_name=Petclinic-DTP-Dev \
-    -Dcontrast.application.name=Petclinic-DTP-Dev \
+    -Dcontrast.agent.java.standalone_app_name=Petclinic-DTP-Prod \
+    -Dcontrast.application.name=Petclinic-DTP-Prod \
     -Dcontrast.config.path=contrast_security.yaml \
-    -Dcontrast.server.environment=Development \
-    -Dcontrast.server=Petclinic-DTP-Dev \
+    -Dcontrast.server.environment=Production \
+    -Dcontrast.server=Petclinic-DTP-Prod \
     -jar ./target/spring-petclinic-1.5.1.jar \
     --server.address=0.0.0.0 \
     --server.port=8080 
